@@ -1,0 +1,13 @@
+config.reload.automatic: true
+config.reload.interval: 3
+http.host: 0.0.0.0
+log.level: info
+path.config: /usr/share/logstash/pipeline/*.conf
+path.logs: /usr/share/logstash/logs
+pipeline.batch.delay: 50
+pipeline.batch.size: 125
+pipeline.ordered: auto
+pipeline.workers: 2
+xpack.monitoring.elasticsearch.hosts:
+- http://elasticsearch:9200
+xpack.monitoring.enabled: false
